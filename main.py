@@ -2,15 +2,14 @@
 import sys
 from code.MapCharacter import MapCharacter
 def main():
-    input1 = "123"
-    input2 = "321"
+    input1 = sys.argv[1]
+    input2 = sys.argv[2]
     canmap = MapCharacter(input1,input2)
     answer=canmap.checkcharactermap()
-    print(answer)
+    print(str(answer).lower())
 
 
 if __name__ == '__main__':
-    print(str(sys.argv))
     main()
 
 

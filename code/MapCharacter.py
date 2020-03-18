@@ -18,7 +18,6 @@ class MapCharacter:
                 else:
                     self.can_map = False
                     break
-            print(self.can_map)
             return self.can_map
 
 
